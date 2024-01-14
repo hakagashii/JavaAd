@@ -17,13 +17,13 @@ public class AnnualPaymentOfPrincipal {
         String vitet = JOptionPane.showInputDialog("Shkruaj numrin e viteve, si numer të plotë, p.sh 5 : ");
         int y = new Integer(vitet).intValue();
 
-        // Pagesa vjetore per kredi
+        // Pagesa  per kredi
         String kredia = JOptionPane.showInputDialog("Shkruaj vleren e kredise, p.sh 25000 : ");
         double krediaAll = new Double(kredia).doubleValue();
         double p = krediaAll / y ;
         
 
-        double numruesi = Math.pow(1 + i,y) * p * 1;
+        double numruesi = Math.pow(1 + i,y) * p * i;
         double emruesi = Math.pow(1 + i,y) - 1;
         double pagesa = numruesi / emruesi;
         DecimalFormat formatter = new DecimalFormat("0.0"); 
